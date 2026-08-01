@@ -1,0 +1,12 @@
+/home/runner/work/nidacoWarehouse/nidacoWarehouse/src/main/java/com/napule77/nidacowarehouse/NidacoWarehouseApplication.java
+/home/runner/work/nidacoWarehouse/nidacoWarehouse/src/main/java/com/napule77/nidacowarehouse/controller/WarehouseController.java
+/home/runner/work/nidacoWarehouse/nidacoWarehouse/src/main/java/com/napule77/nidacowarehouse/domain/MovementType.java
+/home/runner/work/nidacoWarehouse/nidacoWarehouse/src/main/java/com/napule77/nidacowarehouse/domain/Product.java
+/home/runner/work/nidacoWarehouse/nidacoWarehouse/src/main/java/com/napule77/nidacowarehouse/domain/StockMovement.java
+/home/runner/work/nidacoWarehouse/nidacoWarehouse/src/main/java/com/napule77/nidacowarehouse/dto/CreateProductRequest.java
+/home/runner/work/nidacoWarehouse/nidacoWarehouse/src/main/java/com/napule77/nidacowarehouse/dto/RegisterMovementRequest.java
+/home/runner/work/nidacoWarehouse/nidacoWarehouse/src/main/java/com/napule77/nidacowarehouse/exception/ErrorResponse.java
+/home/runner/work/nidacoWarehouse/nidacoWarehouse/src/main/java/com/napule77/nidacowarehouse/exception/GlobalExceptionHandler.java
+/home/runner/work/nidacoWarehouse/nidacoWarehouse/src/main/java/com/napule77/nidacowarehouse/repository/ProductRepository.java
+/home/runner/work/nidacoWarehouse/nidacoWarehouse/src/main/java/com/napule77/nidacowarehouse/repository/StockMovementRepository.java
+/home/runner/work/nidacoWarehouse/nidacoWarehouse/src/main/java/com/napule77/nidacowarehouse/service/WarehouseService.java

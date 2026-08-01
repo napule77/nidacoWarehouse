@@ -1,0 +1,12 @@
+com/napule77/nidacowarehouse/domain/MovementType.class
+com/napule77/nidacowarehouse/exception/ErrorResponse.class
+com/napule77/nidacowarehouse/service/WarehouseService.class
+com/napule77/nidacowarehouse/dto/RegisterMovementRequest.class
+com/napule77/nidacowarehouse/repository/StockMovementRepository.class
+com/napule77/nidacowarehouse/exception/GlobalExceptionHandler.class
+com/napule77/nidacowarehouse/controller/WarehouseController.class
+com/napule77/nidacowarehouse/NidacoWarehouseApplication.class
+com/napule77/nidacowarehouse/repository/ProductRepository.class
+com/napule77/nidacowarehouse/domain/StockMovement.class
+com/napule77/nidacowarehouse/dto/CreateProductRequest.class
+com/napule77/nidacowarehouse/domain/Product.class
