@@ -1,38 +1,18 @@
 <?page title="Nidaco Warehouse" contentType="text/html;charset=UTF-8"?>
 <zk>
-    <window title="Gestione Magazzino" border="normal" width="1000px"
-            apply="org.zkoss.bind.BindComposer"
-            viewModel="@id('vm') @init('com.napule77.nidacowarehouse.zk.WarehouseViewModel')">
-        <vlayout spacing="10px" style="padding:20px;">
-            <label value="Nuovo prodotto" style="font-size:18px;font-weight:bold;"/>
-            <hlayout spacing="8px">
-                <textbox hflex="1" placeholder="SKU" value="@bind(vm.sku)"/>
-                <textbox hflex="2" placeholder="Nome" value="@bind(vm.name)"/>
-                <intbox width="120px" placeholder="Quantità" value="@bind(vm.quantity)"/>
-                <textbox hflex="1" placeholder="Posizione" value="@bind(vm.location)"/>
-                <button label="Aggiungi" onClick="@command('addProduct')"/>
-            </hlayout>
-
+    <window title="Gestione Magazzino" border="normal" width="900px">
+        <vlayout spacing="12px" style="padding:20px;">
+            <label value="Progetto base ZK 10 + Spring Boot + MySQL" style="font-size:18px;font-weight:bold;"/>
+            <label value="Questa pagina è il punto di partenza UI ZK per il modulo magazzino."/>
             <separator/>
-            <label value="Prodotti a magazzino" style="font-size:18px;font-weight:bold;"/>
-            <listbox model="@load(vm.products)" hflex="1" vflex="1" mold="paging" pageSize="10">
-                <listhead>
-                    <listheader label="ID" width="80px"/>
-                    <listheader label="SKU" width="180px"/>
-                    <listheader label="Nome"/>
-                    <listheader label="Quantità" width="120px"/>
-                    <listheader label="Posizione" width="180px"/>
-                </listhead>
-                <template name="model">
-                    <listitem>
-                        <listcell label="@load(each.id)"/>
-                        <listcell label="@load(each.sku)"/>
-                        <listcell label="@load(each.name)"/>
-                        <listcell label="@load(each.quantity)"/>
-                        <listcell label="@load(each.location)"/>
-                    </listitem>
-                </template>
-            </listbox>
+            <label value="API disponibili:" style="font-size:16px;font-weight:bold;"/>
+            <label value="GET /api/warehouse/products"/>
+            <label value="POST /api/warehouse/products"/>
+            <label value="POST /api/warehouse/movements"/>
+            <separator/>
+            <label value="Esempio payload creazione prodotto:" style="font-size:16px;font-weight:bold;"/>
+            <textbox multiline="true" readonly="true" rows="7" hflex="1"
+                     value='{"sku":"SKU-001","name":"Bulloneria M8","quantity":120,"location":"A1-03"}'/>
         </vlayout>
     </window>
 </zk>
