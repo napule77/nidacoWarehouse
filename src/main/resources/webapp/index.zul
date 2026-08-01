@@ -1,0 +1,18 @@
+<?page title="Nidaco Warehouse" contentType="text/html;charset=UTF-8"?>
+<zk>
+    <window title="Gestione Magazzino" border="normal" width="900px">
+        <vlayout spacing="12px" style="padding:20px;">
+            <label value="Progetto base ZK 10 + Spring Boot + MySQL" style="font-size:18px;font-weight:bold;"/>
+            <label value="Questa pagina è il punto di partenza UI ZK per il modulo magazzino."/>
+            <separator/>
+            <label value="API disponibili:" style="font-size:16px;font-weight:bold;"/>
+            <label value="GET /api/warehouse/products"/>
+            <label value="POST /api/warehouse/products"/>
+            <label value="POST /api/warehouse/movements"/>
+            <separator/>
+            <label value="Esempio payload creazione prodotto:" style="font-size:16px;font-weight:bold;"/>
+            <textbox multiline="true" readonly="true" rows="7" hflex="1"
+                     value='{"sku":"SKU-001","name":"Bulloneria M8","quantity":120,"location":"A1-03"}'/>
+        </vlayout>
+    </window>
+</zk>
