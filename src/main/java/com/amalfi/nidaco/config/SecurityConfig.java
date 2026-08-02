@@ -33,7 +33,8 @@ public class SecurityConfig {
                                 "/css/**",
                                 "/js/**",
                                 "/zkau/**",
-                                "/zkres/**"
+                                "/zkres/**",
+                                "/images/**"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )
