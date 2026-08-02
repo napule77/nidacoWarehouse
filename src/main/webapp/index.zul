@@ -1,26 +1,81 @@
-<?page title="Nidaco Warehouse" contentType="text/html;charset=UTF-8"?>
+<?page title="NIDACO Warehouse ERP"?>
 
 <zk>
 
+    <style src="/css/style.css"/>
+
+
     <window
+
         id="mainWindow"
-        apply="com.amalfi.nidaco.controller.IndexComposer"
-        title="Nidaco Warehouse"
-        border="normal"
-        width="600px"
-        height="300px">
 
-        <vlayout spacing="20px">
+        width="100%"
+        height="100%"
 
-            <label
-                id="titleLabel"
-                style="font-size:24px;font-weight:bold"/>
+        border="none"
 
-            <label
-                id="messageLabel"/>
+        apply="com.amalfi.nidaco.controller.IndexComposer">
 
-        </vlayout>
+
+        <borderlayout
+
+            width="100%"
+            height="100%">
+
+
+
+            <!-- HEADER -->
+
+            <north height="65px">
+
+                <include src="/layout/navbar.zul"/>
+
+            </north>
+
+
+
+
+            <!-- SIDEBAR -->
+
+            <west
+
+                width="240px"
+
+                collapsible="true"
+                splittable="true">
+
+
+                <include src="/layout/menu.zul"/>
+
+
+            </west>
+
+
+
+
+            <!-- CONTENUTO -->
+
+            <center>
+
+
+                <include
+
+                    id="contentArea"
+
+                    src="/layout/dashboard.zul"
+
+                    width="100%"
+
+                    height="100%"/>
+
+
+            </center>
+
+
+        </borderlayout>
+
 
     </window>
+
 
 </zk>

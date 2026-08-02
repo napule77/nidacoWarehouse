@@ -1,0 +1,74 @@
+<window
+
+    title="Prodotto"
+
+    border="normal"
+
+    width="500px"
+
+    closable="true"
+
+    apply="">
+
+
+    <grid>
+
+
+        <rows>
+
+
+            <row>
+                <label value="Codice"/>
+
+                <textbox id="codice"/>
+
+            </row>
+
+
+            <row>
+                <label value="Barcode"/>
+
+                <textbox id="barcode"/>
+
+            </row>
+
+
+            <row>
+                <label value="Descrizione"/>
+
+                <textbox id="descrizione"/>
+
+            </row>
+
+
+            <row>
+                <label value="Quantità"/>
+
+                <intbox id="giacenza"/>
+
+            </row>
+
+
+            <row>
+                <label value="Prezzo"/>
+
+                <doublebox id="prezzo"/>
+
+            </row>
+
+
+        </rows>
+
+
+    </grid>
+
+
+
+    <button
+
+        id="btnSalva"
+
+        label="Salva"/>
+
+
+</window>

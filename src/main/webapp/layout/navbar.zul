@@ -1,0 +1,79 @@
+<zk>
+
+
+    <div
+
+        sclass="topbar"
+
+        width="100%"
+        height="65px">
+
+
+
+        <hbox
+
+            width="100%"
+
+            height="65px"
+
+            align="center">
+
+
+
+            <!-- LOGO -->
+
+            <image
+
+                src="/images/Logo-NIDACO-costruzioni.png"
+
+                height="45px"
+
+                width="140px"
+
+                style="
+margin-left:20px;
+object-fit:contain;
+"/>
+
+
+
+            <label
+
+                value="Warehouse Management"
+
+                sclass="app-title"/>
+
+
+
+
+            <div hflex="1"/>
+
+
+
+            <label
+
+                value="Admin"
+
+                sclass="username"/>
+
+
+
+            <button
+
+                id="btnLogout"
+
+                label="Esci"
+
+                iconSclass="z-icon-sign-out"
+
+                sclass="logout"/>
+
+
+
+        </hbox>
+
+
+    </div>
+
+
+</zk>

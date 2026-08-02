@@ -1,0 +1,153 @@
+body {
+
+    background:#f5f7fa;
+
+}
+
+
+
+.topbar {
+
+    background:white;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+
+.app-title {
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    color:#1f2937;
+
+    margin-left:20px;
+
+}
+
+
+
+.username {
+
+    margin-right:20px;
+
+}
+
+
+
+.sidebar {
+
+    background:#ffffff;
+
+    border-right:1px solid #ddd;
+
+}
+
+
+
+.section-title {
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    color:#6b7280;
+
+    margin-top:15px;
+
+}
+
+
+
+.menu-item {
+
+    width:100%;
+
+    text-align:left;
+
+}
+
+
+
+.menu-item:hover {
+
+    background:#e8f0ff;
+
+}
+
+
+
+.dashboard {
+
+    padding:30px;
+
+}
+
+
+
+.page-title {
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+
+
+.card {
+
+    width:220px;
+
+    height:110px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+
+
+.kpi {
+
+    display:block;
+
+    font-size:32px;
+
+    margin-top:15px;
+
+    font-weight:bold;
+
+}
+
+
+
+.panel {
+
+    height:250px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+}
+
+
+
+.panel-title {
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}

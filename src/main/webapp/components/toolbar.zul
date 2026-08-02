@@ -1,0 +1,30 @@
+<toolbar>
+
+    <button id="btnNuovo"
+        label="Nuovo"
+        iconSclass="z-icon-plus"/>
+
+    <button id="btnModifica"
+        label="Modifica"
+        iconSclass="z-icon-edit"/>
+
+
+    <button id="btnElimina"
+        label="Elimina"
+        iconSclass="z-icon-trash"/>
+
+
+    <button id="btnAggiorna"
+        label="Aggiorna"
+        iconSclass="z-icon-refresh"/>
+
+
+    <separator/>
+
+
+    <textbox id="txtRicerca"
+        placeholder="Cerca prodotto..."
+        width="250px"/>
+
+
+</toolbar>

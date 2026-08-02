@@ -1,0 +1,104 @@
+<?page title="Prodotti"?>
+
+<zk>
+
+
+    <window
+
+        id="winProdotti"
+
+        title="Gestione Prodotti"
+
+        border="normal"
+
+        apply="it.amalfi.magazzino.controller.ProdottoComposer">
+
+
+        <include src="components/toolbar.zul"/>
+
+
+
+        <separator/>
+
+
+
+        <listbox
+
+            id="listaProdotti"
+
+            mold="paging"
+
+            pageSize="15"
+
+            width="100%">
+
+
+
+            <listhead>
+
+                <listheader label="Codice"
+                    width="120px"/>
+
+
+                <listheader label="Barcode"
+                    width="120px"/>
+
+
+                <listheader label="Descrizione"/>
+
+
+                <listheader label="Categoria"/>
+
+
+                <listheader label="Giacenza"
+                    width="100px"/>
+
+
+                <listheader label="Prezzo"
+                    width="100px"/>
+
+
+            </listhead>
+
+
+
+            <template name="model">
+
+
+                <listitem value="${each}">
+
+
+                    <listcell label="${each.codice}"/>
+
+
+                    <listcell label="${each.barcode}"/>
+
+
+                    <listcell label="${each.descrizione}"/>
+
+
+                    <listcell label="${each.categoria.descrizione}"/>
+
+
+                    <listcell label="${each.giacenza}"/>
+
+
+                    <listcell label="${each.prezzoVendita}"/>
+
+
+                </listitem>
+
+
+            </template>
+
+
+
+        </listbox>
+
+
+
+    </window>
+
+
+
+</zk>

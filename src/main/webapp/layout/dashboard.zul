@@ -1,0 +1,139 @@
+<zk>
+
+
+    <div
+
+        width="100%"
+
+        height="100%"
+
+        sclass="dashboard">
+
+
+
+        <label
+
+            value="Dashboard Magazzino"
+
+            sclass="page-title"/>
+
+
+
+
+        <hbox
+
+            spacing="20px"
+
+            style="margin-top:25px;">
+
+
+
+            <div sclass="card">
+
+                <label value="Prodotti"/>
+
+                <label
+
+                    value="1250"
+
+                    sclass="kpi"/>
+
+            </div>
+
+
+
+            <div sclass="card">
+
+                <label value="Valore Magazzino"/>
+
+                <label
+
+                    value="€ 125.000"
+
+                    sclass="kpi"/>
+
+            </div>
+
+
+
+            <div sclass="card">
+
+                <label value="Sotto Scorta"/>
+
+                <label
+
+                    value="23"
+
+                    sclass="kpi"/>
+
+            </div>
+
+
+
+            <div sclass="card">
+
+                <label value="Movimenti mese"/>
+
+                <label
+
+                    value="245"
+
+                    sclass="kpi"/>
+
+            </div>
+
+
+        </hbox>
+
+
+
+
+        <hbox
+
+            spacing="20px"
+
+            style="margin-top:30px;">
+
+
+
+            <div
+
+                sclass="panel"
+
+                hflex="1">
+
+                <label
+
+                    value="Andamento Magazzino"
+
+                    sclass="panel-title"/>
+
+            </div>
+
+
+
+            <div
+
+                sclass="panel"
+
+                hflex="1">
+
+
+                <label
+
+                    value="Ultimi Movimenti"
+
+                    sclass="panel-title"/>
+
+
+            </div>
+
+
+        </hbox>
+
+
+
+    </div>
+
+
+</zk>
