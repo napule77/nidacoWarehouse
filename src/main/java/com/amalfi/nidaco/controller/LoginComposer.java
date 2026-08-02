@@ -1,6 +1,7 @@
 package com.amalfi.nidaco.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
+import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.select.SelectorComposer;
 import org.zkoss.zk.ui.select.annotation.Listen;
@@ -17,18 +18,28 @@ public class LoginComposer extends SelectorComposer<Window> {
     private Textbox password;
 
 
+    @Override
+    public void doAfterCompose(Component comp) throws Exception {
+
+        super.doAfterCompose(comp);
+
+        if (isAuthenticated()) {
+            Executions.sendRedirect("/index.zul");
+        }
+    }
+
+
     @Listen("onClick=#loginBtn")
     public void login() {
 
-        HttpServletRequest request =
-                (HttpServletRequest)
-                        Executions.getCurrent()
-                                .getNativeRequest();
-
-
         try {
 
-            request.login(
+            if (isAuthenticated()) {
+                Executions.sendRedirect("/index.zul");
+                return;
+            }
+
+            currentRequest().login(
                     username.getValue(),
                     password.getValue()
             );
@@ -46,5 +57,19 @@ public class LoginComposer extends SelectorComposer<Window> {
             );
         }
 
+    }
+
+
+    private boolean isAuthenticated() {
+
+        return currentRequest().getUserPrincipal() != null;
+    }
+
+
+    private HttpServletRequest currentRequest() {
+
+        return (HttpServletRequest)
+                Executions.getCurrent()
+                        .getNativeRequest();
     }
 }
