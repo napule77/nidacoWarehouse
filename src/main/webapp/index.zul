@@ -1,0 +1,26 @@
+<?page title="Nidaco Warehouse" contentType="text/html;charset=UTF-8"?>
+
+<zk>
+
+    <window
+        id="mainWindow"
+        apply="com.amalfi.nidaco.controller.IndexComposer"
+        title="Nidaco Warehouse"
+        border="normal"
+        width="600px"
+        height="300px">
+
+        <vlayout spacing="20px">
+
+            <label
+                id="titleLabel"
+                style="font-size:24px;font-weight:bold"/>
+
+            <label
+                id="messageLabel"/>
+
+        </vlayout>
+
+    </window>
+
+</zk>

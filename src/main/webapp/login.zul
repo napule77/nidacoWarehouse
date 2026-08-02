@@ -1,0 +1,31 @@
+<?page title="Login" contentType="text/html;charset=UTF-8"?>
+
+<zk>
+
+    <window
+        id="loginWindow"
+        apply="com.amalfi.nidaco.controller.LoginComposer"
+        title="Login"
+        border="normal"
+        width="300px">
+
+        <vlayout spacing="10px" style="padding:20px">
+
+            <textbox
+                id="username"
+                placeholder="Username"/>
+
+            <textbox
+                id="password"
+                type="password"
+                placeholder="Password"/>
+
+            <button
+                id="loginBtn"
+                label="Accedi"/>
+
+        </vlayout>
+
+    </window>
+
+</zk>
