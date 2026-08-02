@@ -29,11 +29,17 @@ public class SecurityConfig {
                 .authenticationProvider(authenticationProvider())
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
-                                "/login",
+                                "/login.zul",
                                 "/css/**",
-                                "/js/**"
+                                "/js/**",
+                                "/zkau/**",
+                                "/zkres/**"
                         ).permitAll()
                         .anyRequest().authenticated()
+                )
+                .formLogin(form -> form
+                        .loginPage("/login.zul")
+                        .permitAll()
                 );
 
         return http.build();
