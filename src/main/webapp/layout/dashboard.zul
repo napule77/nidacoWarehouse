@@ -1,139 +1,97 @@
 <zk>
+    <div width="100%" height="100%" sclass="dashboard">
+        <div sclass="dashboard-heading">
+            <div>
+                <label value="Panoramica amministrazione" sclass="page-title"/>
+                <label value="Controlla le attivita del magazzino in tempo reale" sclass="page-subtitle"/>
+            </div>
+            <div sclass="dashboard-actions">
+                <textbox placeholder="Cerca..." sclass="dashboard-search"/>
+                <button label="Questo anno" iconSclass="z-icon-angle-down" sclass="dashboard-filter"/>
+            </div>
+        </div>
 
+        <div sclass="metric-grid">
+            <div sclass="metric-card">
+                <div sclass="metric-icon metric-icon-purple"><label value="+"/></div>
+                <div><label value="EUR 128.450" sclass="metric-value"/><label value="Valore magazzino" sclass="metric-label"/></div>
+                <label value="+12,4%" sclass="metric-change metric-positive"/>
+            </div>
+            <div sclass="metric-card">
+                <div sclass="metric-icon metric-icon-red"><label value="!"/></div>
+                <div><label value="23" sclass="metric-value"/><label value="Sotto scorta" sclass="metric-label"/></div>
+                <label value="-8,1%" sclass="metric-change metric-negative"/>
+            </div>
+            <div sclass="metric-card">
+                <div sclass="metric-icon metric-icon-blue"><label value="#"/></div>
+                <div><label value="1.254" sclass="metric-value"/><label value="Prodotti attivi" sclass="metric-label"/></div>
+                <label value="+20,9%" sclass="metric-change metric-positive"/>
+            </div>
+            <div sclass="metric-card">
+                <div sclass="metric-icon metric-icon-green"><label value="+"/></div>
+                <div><label value="247" sclass="metric-value"/><label value="Movimenti del mese" sclass="metric-label"/></div>
+                <label value="+5,8%" sclass="metric-change metric-positive"/>
+            </div>
+        </div>
 
-    <div
+        <div sclass="dashboard-content">
+            <div sclass="dashboard-main">
+                <div sclass="dashboard-panel analytics-panel">
+                    <div sclass="panel-header">
+                        <div>
+                            <label value="Andamento magazzino" sclass="panel-title"/>
+                            <label value="Movimenti mensili e valore delle scorte" sclass="panel-subtitle"/>
+                        </div>
+                        <div sclass="chart-legend">
+                            <label value="Carichi" sclass="legend-load"/>
+                            <label value="Scarichi" sclass="legend-unload"/>
+                            <label value="Rettifiche" sclass="legend-adjustment"/>
+                        </div>
+                    </div>
+                    <div sclass="chart-area">
+                        <div sclass="chart-column"><div sclass="chart-stack h-72"><div sclass="bar-load"/><div sclass="bar-unload"/><div sclass="bar-adjustment"/></div><label value="Gen"/></div>
+                        <div sclass="chart-column"><div sclass="chart-stack h-56"><div sclass="bar-load"/><div sclass="bar-unload"/><div sclass="bar-adjustment"/></div><label value="Feb"/></div>
+                        <div sclass="chart-column"><div sclass="chart-stack h-45"><div sclass="bar-load"/><div sclass="bar-unload"/><div sclass="bar-adjustment"/></div><label value="Mar"/></div>
+                        <div sclass="chart-column"><div sclass="chart-stack h-60"><div sclass="bar-load"/><div sclass="bar-unload"/><div sclass="bar-adjustment"/></div><label value="Apr"/></div>
+                        <div sclass="chart-column"><div sclass="chart-stack h-68"><div sclass="bar-load"/><div sclass="bar-unload"/><div sclass="bar-adjustment"/></div><label value="Mag"/></div>
+                        <div sclass="chart-column"><div sclass="chart-stack h-83"><div sclass="bar-load"/><div sclass="bar-unload"/><div sclass="bar-adjustment"/></div><label value="Giu"/></div>
+                        <div sclass="chart-column"><div sclass="chart-stack h-92"><div sclass="bar-load"/><div sclass="bar-unload"/><div sclass="bar-adjustment"/></div><label value="Lug"/></div>
+                        <div sclass="chart-column"><div sclass="chart-stack h-68"><div sclass="bar-load"/><div sclass="bar-unload"/><div sclass="bar-adjustment"/></div><label value="Ago"/></div>
+                        <div sclass="chart-column"><div sclass="chart-stack h-57"><div sclass="bar-load"/><div sclass="bar-unload"/><div sclass="bar-adjustment"/></div><label value="Set"/></div>
+                        <div sclass="chart-column"><div sclass="chart-stack h-48"><div sclass="bar-load"/><div sclass="bar-unload"/><div sclass="bar-adjustment"/></div><label value="Ott"/></div>
+                        <div sclass="chart-column"><div sclass="chart-stack h-76"><div sclass="bar-load"/><div sclass="bar-unload"/><div sclass="bar-adjustment"/></div><label value="Nov"/></div>
+                        <div sclass="chart-column"><div sclass="chart-stack h-74"><div sclass="bar-load"/><div sclass="bar-unload"/><div sclass="bar-adjustment"/></div><label value="Dic"/></div>
+                    </div>
+                </div>
 
-        width="100%"
-
-        height="100%"
-
-        sclass="dashboard">
-
-
-
-        <label
-
-            value="Dashboard Magazzino"
-
-            sclass="page-title"/>
-
-
-
-
-        <hbox
-
-            spacing="20px"
-
-            style="margin-top:25px;">
-
-
-
-            <div sclass="card">
-
-                <label value="Prodotti"/>
-
-                <label
-
-                    value="1250"
-
-                    sclass="kpi"/>
-
+                <div sclass="dashboard-panel recent-panel">
+                    <div sclass="panel-header">
+                        <div><label value="Movimenti recenti" sclass="panel-title"/><label value="Ultime operazioni registrate" sclass="panel-subtitle"/></div>
+                        <button label="Vedi tutto" sclass="panel-link"/>
+                    </div>
+                    <div sclass="activity-table">
+                        <div sclass="activity-row activity-head"><label value="PRODOTTO"/><label value="TIPO"/><label value="QUANTITA"/><label value="DATA"/><label value="STATO"/></div>
+                        <div sclass="activity-row"><label value="Cemento Portland 25 kg"/><label value="Carico" sclass="activity-type type-load"/><label value="+120 pz"/><label value="Oggi, 10:42"/><label value="Completato" sclass="activity-status status-complete"/></div>
+                        <div sclass="activity-row"><label value="Pittura murale bianca"/><label value="Scarico" sclass="activity-type type-unload"/><label value="-24 pz"/><label value="Oggi, 09:15"/><label value="Completato" sclass="activity-status status-complete"/></div>
+                        <div sclass="activity-row"><label value="Tubo PVC 100 mm"/><label value="Rettifica" sclass="activity-type type-adjustment"/><label value="+8 pz"/><label value="Ieri, 16:30"/><label value="Verificato" sclass="activity-status status-pending"/></div>
+                        <div sclass="activity-row"><label value="Rete elettrosaldata 2x3 m"/><label value="Scarico" sclass="activity-type type-unload"/><label value="-10 pz"/><label value="Ieri, 14:05"/><label value="Completato" sclass="activity-status status-complete"/></div>
+                    </div>
+                </div>
             </div>
 
-
-
-            <div sclass="card">
-
-                <label value="Valore Magazzino"/>
-
-                <label
-
-                    value="€ 125.000"
-
-                    sclass="kpi"/>
-
+            <div sclass="dashboard-side">
+                <div sclass="dashboard-panel stock-panel">
+                    <div sclass="panel-header"><label value="Stato scorte" sclass="panel-title"/><button label="..." sclass="more-button"/></div>
+                    <div sclass="stock-ring"><div><label value="82%" sclass="stock-percent"/><label value="copertura" sclass="stock-caption"/></div></div>
+                    <div sclass="stock-summary"><label value="1.028 prodotti disponibili"/><label value="23 sotto scorta" sclass="stock-warning"/></div>
+                </div>
+                <div sclass="dashboard-panel alerts-panel">
+                    <div sclass="panel-header"><label value="Da controllare" sclass="panel-title"/><button label="..." sclass="more-button"/></div>
+                    <div sclass="alert-row"><div sclass="alert-dot alert-red"/><div><label value="Scorte basse" sclass="alert-title"/><label value="23 prodotti da riordinare" sclass="alert-text"/></div><label value="23" sclass="alert-count"/></div>
+                    <div sclass="alert-row"><div sclass="alert-dot alert-blue"/><div><label value="Ordini in arrivo" sclass="alert-title"/><label value="6 consegne previste" sclass="alert-text"/></div><label value="6" sclass="alert-count"/></div>
+                    <div sclass="alert-row"><div sclass="alert-dot alert-yellow"/><div><label value="Inventario" sclass="alert-title"/><label value="2 reparti da verificare" sclass="alert-text"/></div><label value="2" sclass="alert-count"/></div>
+                </div>
             </div>
-
-
-
-            <div sclass="card">
-
-                <label value="Sotto Scorta"/>
-
-                <label
-
-                    value="23"
-
-                    sclass="kpi"/>
-
-            </div>
-
-
-
-            <div sclass="card">
-
-                <label value="Movimenti mese"/>
-
-                <label
-
-                    value="245"
-
-                    sclass="kpi"/>
-
-            </div>
-
-
-        </hbox>
-
-
-
-
-        <hbox
-
-            spacing="20px"
-
-            style="margin-top:30px;">
-
-
-
-            <div
-
-                sclass="panel"
-
-                hflex="1">
-
-                <label
-
-                    value="Andamento Magazzino"
-
-                    sclass="panel-title"/>
-
-            </div>
-
-
-
-            <div
-
-                sclass="panel"
-
-                hflex="1">
-
-
-                <label
-
-                    value="Ultimi Movimenti"
-
-                    sclass="panel-title"/>
-
-
-            </div>
-
-
-        </hbox>
-
-
-
+        </div>
     </div>
-
-
 </zk>

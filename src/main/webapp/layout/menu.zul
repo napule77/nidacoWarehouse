@@ -1,154 +1,34 @@
 <zk>
-
-
-    <div
-
-        height="100%"
-
-        width="100%"
-
-        sclass="sidebar">
-
-
-
-        <vlayout
-
-            width="100%"
-
-            spacing="5px"
-
-            style="padding:15px;">
-
-
-
-            <label
-
-                value="MENU PRINCIPALE"
-
-                sclass="section-title"/>
-
-
-
+    <div height="100%" width="100%" sclass="sidebar">
+        <vlayout width="100%" spacing="5px" style="padding:15px;">
+            <label value="MENU PRINCIPALE" sclass="section-title"/>
             <button
-
                 id="menuDashboard"
-
                 label="Dashboard"
-
                 iconSclass="z-icon-dashboard"
+                sclass="menu-item menu-item-active"/>
+            <button label="Analisi" iconSclass="z-icon-line-chart" sclass="menu-item"/>
 
-                sclass="menu-item"/>
-
-
-
-            <separator/>
-
-
-
-            <label
-
-                value="MAGAZZINO"
-
-                sclass="section-title"/>
-
-
-
+            <label value="MAGAZZINO" sclass="section-title"/>
             <button
-
                 id="menuProdotti"
-
                 label="Prodotti"
-
                 iconSclass="z-icon-cube"
-
                 sclass="menu-item"/>
+            <button label="Movimenti" iconSclass="z-icon-exchange" sclass="menu-item"/>
+            <button label="Inventario" iconSclass="z-icon-list" sclass="menu-item"/>
 
-
-
+            <label value="ANAGRAFICHE" sclass="section-title"/>
             <button
-
-                label="Movimenti"
-
-                iconSclass="z-icon-exchange"
-
-                sclass="menu-item"/>
-
-
-
-            <button
-
-                label="Inventario"
-
-                iconSclass="z-icon-list"
-
-                sclass="menu-item"/>
-
-
-
-
-            <label
-
-                value="ANAGRAFICHE"
-
-                sclass="section-title"/>
-
-
-
-            <button
-
                 id="menuCategorie"
-
                 label="Categorie"
-
                 iconSclass="z-icon-tags"
-
                 sclass="menu-item"/>
+            <button label="Fornitori" iconSclass="z-icon-truck" sclass="menu-item"/>
+            <button label="Clienti" iconSclass="z-icon-users" sclass="menu-item"/>
 
-
-
-            <button
-
-                label="Fornitori"
-
-                iconSclass="z-icon-truck"
-
-                sclass="menu-item"/>
-
-
-
-            <button
-
-                label="Clienti"
-
-                iconSclass="z-icon-users"
-
-                sclass="menu-item"/>
-
-
-
-            <label
-
-                value="REPORT"
-
-                sclass="section-title"/>
-
-
-
-            <button
-
-                label="Statistiche"
-
-                iconSclass="z-icon-bar-chart"
-
-                sclass="menu-item"/>
-
-
-
+            <label value="REPORT" sclass="section-title"/>
+            <button label="Report" iconSclass="z-icon-bar-chart" sclass="menu-item"/>
         </vlayout>
-
-
-
     </div>
-
-
 </zk>

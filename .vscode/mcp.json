@@ -1,0 +1,27 @@
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "mysql-password",
+      "description": "Password for the local MySQL nidaco_warehouse database",
+      "password": true
+    }
+  ],
+  "servers": {
+    "nidaco-mysql": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mysql-mcp@1.1.1"
+      ],
+      "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_PORT": "3306",
+        "MYSQL_DATABASE": "nidaco_warehouse",
+        "MYSQL_USER": "root",
+        "MYSQL_PASSWORD": "${input:mysql-password}"
+      }
+    }
+  }
+}
