@@ -1,7 +1,6 @@
 package com.amalfi.nidaco.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
-import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.select.SelectorComposer;
 import org.zkoss.zk.ui.select.annotation.Listen;
@@ -19,7 +18,7 @@ public class LoginComposer extends SelectorComposer<Window> {
 
 
     @Override
-    public void doAfterCompose(Component comp) throws Exception {
+    public void doAfterCompose(Window comp) throws Exception {
 
         super.doAfterCompose(comp);
 
